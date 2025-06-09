@@ -1,0 +1,148 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 220 30% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 25% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 25% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 210 100% 60%;
+    --primary-foreground: 220 30% 5%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 220 20% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 15%;
+    --input: 220 20% 15%;
+    --ring: 210 100% 60%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 25% 8%;
+    --sidebar-foreground: 220 5% 95%;
+    --sidebar-primary: 210 100% 60%;
+    --sidebar-primary-foreground: 220 30% 5%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 220 5% 95%;
+    --sidebar-border: 220 20% 15%;
+    --sidebar-ring: 210 100% 60%;
+  }
+
+  .dark {
+    --background: 220 30% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 25% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 25% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 210 100% 60%;
+    --primary-foreground: 220 30% 5%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 220 20% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 15%;
+    --input: 220 20% 15%;
+    --ring: 210 100% 60%;
+    --sidebar-background: 220 25% 8%;
+    --sidebar-foreground: 220 5% 95%;
+    --sidebar-primary: 210 100% 60%;
+    --sidebar-primary-foreground: 220 30% 5%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 220 5% 95%;
+    --sidebar-border: 220 20% 15%;
+    --sidebar-ring: 210 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Blue-themed Animation Styles */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-10px) rotate(120deg); }
+  66% { transform: translateY(5px) rotate(240deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
+  50% { opacity: 0.9; transform: scale(1.05); box-shadow: 0 0 40px rgba(59, 130, 246, 0.6); }
+}
+
+@keyframes drift {
+  0% { transform: translateX(0px) translateY(0px); }
+  25% { transform: translateX(15px) translateY(-8px); }
+  50% { transform: translateX(-8px) translateY(-15px); }
+  75% { transform: translateX(-15px) translateY(8px); }
+  100% { transform: translateX(0px) translateY(0px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.blue-particle {
+  animation: float 8s ease-in-out infinite;
+  background: linear-gradient(45deg, #3b82f6, #1e40af, #2563eb);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+.blue-particle:nth-child(2) { animation-delay: -1.5s; }
+.blue-particle:nth-child(3) { animation-delay: -3s; }
+.blue-particle:nth-child(4) { animation-delay: -4.5s; }
+.blue-particle:nth-child(5) { animation-delay: -6s; }
+.blue-particle:nth-child(6) { animation-delay: -7.5s; }
+
+.pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.drift {
+  animation: drift 25s ease-in-out infinite;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
