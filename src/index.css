@@ -1,0 +1,67 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 30% 5%;
+    --foreground: 0 0% 98%;
+    --card: 220 25% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 25% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 210 100% 60%;
+    --primary-foreground: 220 30% 5%;
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 220 20% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 15%;
+    --input: 220 20% 15%;
+    --ring: 210 100% 60%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 220 30% 5%;
+    --foreground: 0 0% 98%;
+    --card: 220 25% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 25% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 210 100% 60%;
+    --primary-foreground: 220 30% 5%;
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 220 20% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 15%;
+    --input: 220 20% 15%;
+    --ring: 210 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
