@@ -1,4 +1,3 @@
-
 import { LinkItem } from "@/hooks/useLinks";
 
 export const housesData: LinkItem[] = [
@@ -339,7 +338,7 @@ export const housesData: LinkItem[] = [
     imageUrl: 'https://bio.linkcdn.cc/upload/2025060621/1749247059468.png'
   },
   {
-    id: '116',
+    id: 'casa-116',
     title: 'casa medieval início',
     description: 'Casa medieval perfeita para início de jogo',
     url: 'https://terabox.app/s/16n0fxVfZtneOgxb56Z-CWg',
@@ -347,7 +346,7 @@ export const housesData: LinkItem[] = [
     imageUrl: 'https://github.com/Guihjzzz/fotos/blob/main/casa%20medieval%20in%C3%ADcio.png?raw=true'
   },
   {
-    id: '117',
+    id: 'casa-117',
     title: 'casa para início de survival',
     description: 'Casa ideal para começar no modo survival',
     url: 'https://terabox.app/s/1PHBEWAlc8AyAuzQhmX6OBw',
@@ -355,7 +354,7 @@ export const housesData: LinkItem[] = [
     imageUrl: 'https://github.com/Guihjzzz/fotos/blob/main/casa%20para%20in%C3%ADcio%20de%20survival.png?raw=true'
   },
   {
-    id: '118',
+    id: 'casa-118',
     title: 'casinha medieval',
     description: 'Pequena casa medieval aconchegante',
     url: 'https://terabox.app/s/1BJE8pSUleZy6ZQUNkAr_zg',
@@ -363,7 +362,7 @@ export const housesData: LinkItem[] = [
     imageUrl: 'https://github.com/Guihjzzz/fotos/blob/main/casinha%20medieval.png?raw=true'
   },
   {
-    id: '119',
+    id: 'casa-119',
     title: 'castelo fantasy',
     description: 'Castelo fantástico com elementos mágicos',
     url: 'https://terabox.app/s/1NjiKp8_scIF9taA7h4tlVg',
@@ -371,7 +370,7 @@ export const housesData: LinkItem[] = [
     imageUrl: 'https://github.com/Guihjzzz/fotos/blob/main/castelo%20fantasy.png?raw=true'
   },
   {
-    id: '120',
+    id: 'casa-120',
     title: 'castelo',
     description: 'Castelo imponente e majestoso',
     url: 'https://terabox.app/s/12OdV-B8iCdAgXXx0IuIzpg',
@@ -379,7 +378,7 @@ export const housesData: LinkItem[] = [
     imageUrl: 'https://github.com/Guihjzzz/fotos/blob/main/castelo.png?raw=true'
   },
   {
-    id: '121',
+    id: 'casa-121',
     title: 'celeiro',
     description: 'Celeiro rústico para fazenda',
     url: 'https://terabox.app/s/1tj93QbWYxUnc-KKkNDtRMQ',
@@ -387,7 +386,7 @@ export const housesData: LinkItem[] = [
     imageUrl: 'https://github.com/Guihjzzz/fotos/blob/main/celeiro.png?raw=true'
   },
   {
-    id: '122',
+    id: 'casa-122',
     title: 'Fantasy Pig House',
     description: 'Casa fantástica temática de porcos',
     url: 'https://terabox.app/s/19qBK_ZeAx_8OC0mX0abvRw',
