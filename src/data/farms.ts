@@ -1,3 +1,4 @@
+
 import { LinkItem } from "@/hooks/useLinks";
 
 export const farmsData: LinkItem[] = [
@@ -168,5 +169,13 @@ export const farmsData: LinkItem[] = [
     url: 'https://terabox.app/s/12rDCVcZ59cE_tAZZqa1I3Q',
     category: 'FARMS',
     imageUrl: 'https://github.com/Guihjzzz/fotos/blob/main/Farm%20de%20Pedra.png?raw=true'
+  },
+  {
+    id: 'farm-118',
+    title: 'Farm gold',
+    description: 'Farm automática de ouro',
+    url: 'https://terabox.app/s/1Ktml7dOFshMg2zvF7WKTqw',
+    category: 'FARMS',
+    imageUrl: 'https://github.com/Guihjzzz/fotos/blob/main/farm%20gold.png?raw=true'
   }
 ];
